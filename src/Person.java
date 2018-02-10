@@ -4,7 +4,7 @@ public class Person {
     private int age;
     private int pesel;
 
-    public Person(String firstName, String lastName, int age, int pesel) {
+    public Person(String firstName, String lastName, int age, int pesel) throws Exception{
         this.firstName = firstName;
         if(this.firstName.equals(null) || this.firstName.length() == 0)
             throw new NullPointerException();

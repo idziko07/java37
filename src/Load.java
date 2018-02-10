@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Load {
 
-    public Person add(){
+    public Person add() throws Exception{
         Scanner input = new Scanner(System.in);
         input.useLocale(Locale.US);
 

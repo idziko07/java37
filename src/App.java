@@ -11,7 +11,9 @@ public class App {
         }catch (IncorrectAgeException e){
             System.out.println(e.getMessage());
         }catch (NullPointerException e){
-            System.out.println("Imie lub nazwisko jest nullem");
+            System.out.println("Imie lub nazwsiko jest nullem");
+        }catch (Exception e){
+            System.out.println("Wystapiły inne błedy");
         }
     }
 }

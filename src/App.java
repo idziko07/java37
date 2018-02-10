@@ -4,13 +4,14 @@ public class App {
         Person person;
 
         try {
-            person = load.add();
-            System.out.println(person.toString());
+           person = load.add();
+           System.out.println(person.toString());
         }catch (NameUndefinedException e){
             System.out.println(e.getMessage());
         }catch (IncorrectAgeException e){
             System.out.println(e.getMessage());
+        }catch (NullPointerException e){
+            System.out.println("Imie lub nazwisko jest nullem");
         }
-
     }
 }
